@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>PHI De-ID + Re-ID Risk Scorer</title>
+ <link rel="stylesheet" href="/static/styles.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500&display=swap" rel="stylesheet" />
+</head>
+<body>
+ <div class="app">
+ <header class="header">
+ <div class="brand">
+ <span class="logo">🔒</span>
+ <div>
+ <h1>PHI De-ID + Re-ID Risk Scorer</h1>
+ <p>Redact identifiers · score re-identification risk · before/after view</p>
+ </div>
+ </div>
+ <div class="sample-btns" id="sampleBtns"></div>
+ </header>
+
+ <div class="layout">
+ <section class="input-section">
+ <label for="noteInput">Clinical note</label>
+ <textarea id="noteInput" rows="14" placeholder="Paste clinical note text containing PHI…"></textarea>
+ <button type="button" class="btn primary" id="btnAnalyze">Analyze &amp; redact</button>
+ </section>
+
+ <section class="results-section hidden" id="resultsSection">
+ <div class="risk-hero" id="riskHero">
+ <div class="risk-gauge" id="riskGauge">
+ <svg viewBox="0 0 120 120">
+ <circle cx="60" cy="60" r="52" class="gauge-bg"/>
+ <circle cx="60" cy="60" r="52" class="gauge-fill" id="gaugeFill"/>
+ </svg>
+ <div class="gauge-text">
+ <span class="gauge-score" id="gaugeScore"> - </span>
+ <span class="gauge-label">risk score</span>
+ </div>
+ </div>
+ <div class="risk-meta">
+ <span class="risk-badge" id="riskBadge"> - </span>
+ <p id="riskSummary"></p>
+ <div class="stat-row">
+ <span><strong id="redactCount">0</strong> PHI elements redacted</span>
+ </div>
+ </div>
+ </div>
+
+ <div class="compare-grid">
+ <div class="compare-col">
+ <h3>Original</h3>
+ <pre class="note-view" id="originalView"></pre>
+ </div>
+ <div class="compare-col">
+ <h3>Redacted</h3>
+ <pre class="note-view redacted" id="redactedView"></pre>
+ </div>
+ </div>
+
+ <div class="factors-panel">
+ <h3>Re-identification risk factors</h3>
+ <div class="factors-grid" id="factorsGrid"></div>
+ </div>
+
+ <details class="redactions-detail">
+ <summary>Redaction log (<span id="logCount">0</span> items)</summary>
+ <div class="redaction-log" id="redactionLog"></div>
+ </details>
+ </section>
+
+ <section class="empty-state" id="emptyState">
+ <div class="shield-icon">🛡️</div>
+ <h2>Privacy-safe clinical text analysis</h2>
+ <p>Load a sample or paste a note to redact PHI (names, dates, phones, MRNs, addresses, emails) and receive a re-identification risk score with factor breakdown.</p>
+ </section>
+ </div>
+ </div>
+ <div class="toast hidden" id="toast"></div>
+ <script src="/static/app.js"></script>
+</body>
+</html>

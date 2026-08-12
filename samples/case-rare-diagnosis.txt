@@ -1,0 +1,26 @@
+Patient: Ms. Patricia Nguyen
+DOB: 04/22/1987
+MRN: 8847291056
+Phone: (503) 555-0142
+Email: p.nguyen@email-example.com
+Address: 1847 Oakwood Avenue, Portland, OR 97205
+
+CLINICAL NOTE - Genetics Clinic
+Date: June 18, 2026
+
+Ms. Patricia Nguyen is a 39-year-old female with confirmed Ehlers-Danlos syndrome,
+hypermobility type, followed since 2019. She reports increasing joint subluxations
+and chronic pain despite physical therapy.
+
+Past events:
+- 01/15/2019: Initial genetics evaluation
+- 06/03/2021: Cardiology referral for mitral valve prolapse
+- 03/12/2024: Pelvic floor PT started
+- 11/08/2025: GI workup for dysmotility
+
+Occupation: Part-time yoga instructor (former Olympic athlete - rowing).
+
+Assessment: Rare connective tissue disorder with multisystem involvement.
+Plan: Continue multidisciplinary care; research registry enrollment discussed.
+
+Provider: Dr. Sarah Kim, MD | NPI 1122334455

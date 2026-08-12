@@ -1,0 +1,19 @@
+Patient: James Holloway
+DOB: 09/30/1965
+MRN: 4421987
+
+CLINICAL NOTE - Internal Medicine Follow-up
+Date: June 20, 2026
+
+Mr. James Holloway returns for hypertension and type 2 diabetes management.
+
+Vitals today: BP 138/82, weight stable.
+
+Medications: Lisinopril 20mg daily, Metformin 1000mg BID, Atorvastatin 20mg HS.
+
+Labs from 06/01/2026: HbA1c 7.1%, creatinine 1.0.
+
+Patient reports good adherence. No chest pain or shortness of breath.
+Continue current regimen; recheck labs in 3 months.
+
+Provider: Dr. Michael Torres, MD
